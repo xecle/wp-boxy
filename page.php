@@ -8,7 +8,7 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.0
  */
 

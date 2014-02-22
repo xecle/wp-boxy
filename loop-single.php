@@ -10,7 +10,7 @@
  * This can be overridden in child themes with loop-single.php.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.2
  */
 ?>

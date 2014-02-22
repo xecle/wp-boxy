@@ -1,6 +1,6 @@
 <?php
 /**
- * TwentyTen functions and definitions
+ * Boxy functions and definitions
  *
  * Sets up the theme and provides some helper functions. Some helper functions
  * are used in the theme as custom template tags. Others are attached to action and
@@ -34,7 +34,7 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.0
  */
 
@@ -476,7 +476,7 @@ function original_gototop() {
 <script language="javascript">
 var obj=document.getElementById("gototop");
 obj.style.display="none";
-function getScrollTop(){return document.documentElement.scrollTop+document.body.scrollTop;}
+function getScrollTop(){return document.documentElement.scrollTop || document.body.pageYOffset || document.body.scrollTop;}
 function setScrollTop(value){document.documentElement.scrollTop=value;document.body.scrollTop=value;}
 window.onscroll=function(){getScrollTop()>0?obj.style.display="":obj.style.display="none";}
 obj.onclick=function(){var goTop=setInterval(scrollMove,10); function scrollMove(){setScrollTop(getScrollTop()/1.1);if(getScrollTop()<1)clearInterval(goTop);}}

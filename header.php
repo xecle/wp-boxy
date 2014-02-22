@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.0
  */
 ?><!DOCTYPE html>

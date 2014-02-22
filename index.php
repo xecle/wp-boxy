@@ -9,8 +9,8 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Boxy 1.0
+ * @subpackage Boxy
+ * @since Boxy 1.1
  */
 
 get_header(); ?>

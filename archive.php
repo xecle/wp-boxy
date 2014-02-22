@@ -8,7 +8,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.0
  */
 

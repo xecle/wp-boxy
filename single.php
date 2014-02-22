@@ -3,7 +3,7 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Boxy
  * @since Boxy 1.0
  */
 
