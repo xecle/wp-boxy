@@ -169,13 +169,13 @@ add_filter( 'excerpt_length', 'boxy_excerpt_length' );
 
 if ( ! function_exists( 'boxy_continue_reading_link' ) ) :
 /**
- * Returns a "Continue Reading" link for excerpts
+ * Returns a "Read full" link for excerpts
  *
  * @since Boxy 1.0
- * @return string "Continue Reading" link
+ * @return string "Read full" link
  */
 function boxy_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boxy' ) . '</a>';
+	return ' <br><a href="'. get_permalink() . '">' . __( 'Read full 4', 'boxy' ) . '</a>';
 }
 endif;
 
@@ -194,13 +194,13 @@ function boxy_auto_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'boxy_auto_excerpt_more' );
 
 /**
- * Adds a pretty "Continue Reading" link to custom post excerpts.
+ * Adds a pretty "Read full" link to custom post excerpts.
  *
  * To override this link in a child theme, remove the filter and add your own
  * function tied to the get_the_excerpt filter hook.
  *
  * @since Boxy 1.0
- * @return string Excerpt with a pretty "Continue Reading" link
+ * @return string Excerpt with a pretty "Read full" link
  */
 function boxy_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {

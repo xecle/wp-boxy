@@ -197,7 +197,7 @@ div.menu,
 }
 body {
 	background: #f8f8e8;
-	background-image: url(/wp-content/themes/boxy/images/noise.png);
+	background-image: url(images/noise.png);
 }
 body,
 input,
@@ -669,6 +669,10 @@ div.menu li {
 	margin-right: 0;
 	text-align: left;
 	width: 33%;
+}
+.entry-comment {
+	float:right;
+	background: url(images/comments.png);
 }
 .page-link {
 	clear: both;

@@ -101,7 +101,7 @@
 						</div><!-- .entry-attachment -->
 						<div class="entry-caption"><?php if ( !empty( $post->post_excerpt ) ) the_excerpt(); ?></div>
 
-<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boxy' ) ); ?>
+<?php the_content( __( 'Read full 3', 'boxy' ) ); ?>
 <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'boxy' ), 'after' => '</div>' ) ); ?>
 
 					</div><!-- .entry-content -->

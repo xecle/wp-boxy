@@ -88,6 +88,7 @@
 			</div><!-- .entry-content -->
 
 			<div class="entry-utility">
+<?php /* How to display posts of gallery format. */?>
 			<?php if ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) : ?>
 				<a href="<?php echo get_post_format_link( 'gallery' ); ?>" title="<?php esc_attr_e( 'View Galleries', 'boxy' ); ?>"><?php _e( 'More Galleries', 'boxy' ); ?></a>
 				<span class="meta-sep">|</span>
@@ -104,14 +105,13 @@
 
 	<?php elseif ( ( function_exists( 'get_post_format' ) && 'aside' == get_post_format( $post->ID ) ) || in_category( _x( 'asides', 'asides category slug', 'boxy' ) )  ) : ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 		<?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 		<?php else : ?>
 			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boxy' ) ); ?>
+				<?php the_content( __( 'Read full', 'boxy' ) ); ?>
 			</div><!-- .entry-content -->
 		<?php endif; ?>
 
@@ -128,6 +128,9 @@
 	<?php else : ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<div class="entry-comment">
+			T<?php get_comment_count( $post->ID )['approved']; ?>
+			</div><!-- .entry-comment -->
 
 			<div class="entry-meta">
 				<?php boxy_posted_on(); ?>
@@ -139,7 +142,7 @@
 			</div><!-- .entry-summary -->
 	<?php else : ?>
 			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boxy' ) ); ?>
+				<?php the_content( __( 'Read full', 'boxy' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'boxy' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
 	<?php endif; ?>
