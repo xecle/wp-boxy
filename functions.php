@@ -111,7 +111,7 @@ function disable_open_sans( $translations, $text, $context, $domain ) {
 	}
 	return $translations;
 }
-add_filter( 'gettext_with_context', 'disable_open_sans' );
+add_filter( 'gettext_with_context', 'disable_open_sans', 888, 4 );
 
 if ( ! function_exists( 'boxy_admin_header_style' ) ) :
 /**
