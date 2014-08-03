@@ -128,9 +128,6 @@
 	<?php else : ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<div class="entry-comment">
-			T<?php get_comment_count( $post->ID )['approved']; ?>
-			</div><!-- .entry-comment -->
 
 			<div class="entry-meta">
 				<?php boxy_posted_on(); ?>
