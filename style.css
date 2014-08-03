@@ -186,6 +186,10 @@ div.menu,
 -------------------------------------------------------------- */
 
 /* Main global 'theme' and typographic styles */
+@font-face {
+	  font-family: 'Yesteryear';
+	    src: url('http://www.fontsaddict.com/fontface/yesteryear.ttf');
+}
 body {
 	background: #f8f8e8;
 	background-image: url(/wp-content/themes/boxy/images/noise.png);

@@ -102,6 +102,17 @@ function boxy_setup() {
 }
 endif;
 
+/**
+ * Disable open-sans from google fonts for GFW
+ */
+function disable_open_sans( $translations, $text, $context, $domain ) {
+	if ( 'Open Sans font: on or off' == $context && 'on' == $text ) {
+		$translations = 'off';
+	}
+	return $translations;
+}
+add_filter( 'gettext_with_context', 'disable_open_sans' );
+
 if ( ! function_exists( 'boxy_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
